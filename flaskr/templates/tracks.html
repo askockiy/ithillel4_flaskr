@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block tracks %}
+  {% if count is defined %}
+</br>
+  <p>genre: {{ genre }}</p>
+  <p>count: {{ count }}</p>
+  {% else%}
+  <p>количество записей из таблицы tracks: {{ tracks }}</p>
+  {% endif %}
+{% endblock %}
+

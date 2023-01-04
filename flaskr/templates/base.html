@@ -1,0 +1,18 @@
+<!doctype html>
+<head>
+  <title>{% block title %}{% endblock %} - flaskr</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<head>
+<body>
+  <nav>
+    <h1>Flaskr</h1>
+  </nav>
+  <section class="content">
+    <header>
+      {% block header %}{% endblock %}
+    </header>
+    {% block names %}{% endblock %}
+    {% block tracks %}{% endblock %}
+    {% block track_sec %}{% endblock %}
+  </section>
+</body>

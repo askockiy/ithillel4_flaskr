@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block track_sec %}
+<table>
+  <tr>
+    <th>title</th>
+    <th>length (seconds)</th>
+  </tr>
+  {% for track in track_sec %}
+  <tr>
+    <td>{{ track.title }}</td>
+    <td>{{ track.length }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
+
